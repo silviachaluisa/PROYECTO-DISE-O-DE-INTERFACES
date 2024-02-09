@@ -1,47 +1,84 @@
-.Inicio{
+/* FONDO DE LA PAGINA */
+.Home{
     background-image: url(../Imagenes/Fondo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
-p,
-h5,
-h4,
-h3,
-h2,
-h1{
-    color: white;
-}
-/* BOTON INICIAR SESION */
-a{
+
+/* BOTON INICIAR SESION y REGISTRO */
+.Botones a{
     position: relative;
-    background-color: rgb(204, 14, 14);
+    background-color: rgb(204, 14, 14); /*Borde de los botones*/
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 20px;
-    letter-spacing: 0.1em;
-    padding: 10px 20px;
+    font-size: 15px;
+    letter-spacing: 0.2em; /*Separacion entre las letras dentro del boton*/
+    padding: 10px 20px; /*Borde alrededor de los botones*/
     transition: 0.5s;
-
 }
-a:hover{
+.Botones a:hover{
     background: var(--clr);
-    letter-spacing: 0.10em;
+    color:var(--clr);
+    letter-spacing: 0.2em;
     box-shadow: 0 0 90px var(--clr);
 }
 
-a:before{
-    content: "";
+.Botones a:before{
+    content: ""; /*le quita el fondo rojo inicial a los botones, para que quede solo el borde*/
     position: absolute;
     inset: 3px; /*Borde rojo de inicio de sesion*/
     background: black;
 }
-a span{
+.Botones a span{
     position:relative;
     z-index: 1;
 }
 
+/* ENCABEZADO ------------------------------------------------*/
+html{
+    scroll-behavior: smooth; /*Me permite deslizar cuando hago click en los modulos*/
+}
+.contenedor-header{
+    background-color: black; /*Fondo del encabezado*/
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenedor-header header{
+   display: flex; /*Coloca el nav y los botones en la parte de arriba junto al logo*/
+   align-items: center;
 
+}
+/* logo */
+img{
+    width: 16rem;   
+}
+/*Para poner los menus en horizontal*/
+.contenedor-header header ul{
+    display: flex; /*Coloca los menus en forma horizontal*/
+    margin-right: 135px; /*Empuja a los botones hacia el lado  derecho*/
+}
+/*texto del menu*/
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: white;
+    margin: 0 15px;
+    transition: .5s;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+.contenedor-header header nav ul li a:hover{
+    color: grey;
+}
+
+.contenedor-header .Botones a{
+    margin-left: 20px;
+    
+    
+}
     
     
