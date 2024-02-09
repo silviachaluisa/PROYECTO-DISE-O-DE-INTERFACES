@@ -21,7 +21,7 @@
 .Botones a:hover{
     background: var(--clr);
     color:var(--clr);
-    letter-spacing: 0.2em;
+    letter-spacing: 0.3em;
     box-shadow: 0 0 90px var(--clr);
 }
 
@@ -42,23 +42,57 @@ html{
 }
 .contenedor-header{
     background-color: black; /*Fondo del encabezado*/
-    padding: 10px;
+    padding: 3px;
     justify-content: space-between;
     align-items: center;
+    position: fixed; /*mantiene estatica el encabezado en todas las secciones*/
+    width: 100%; /*Define el tamaño del encabezado a lo largo*/
 }
 .contenedor-header header{
    display: flex; /*Coloca el nav y los botones en la parte de arriba junto al logo*/
    align-items: center;
+   
 
 }
 /* logo */
 img{
-    width: 16rem;   
+    width: 14rem;  
+    
 }
+/*video*/
+#inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 120vh; /* Ajusta la altura según tus necesidades */
+    color: white;
+
+}
+
+.contenido-inicio {
+    text-align: center; /*Centra los iconos de las redes sociales*/
+    max-width: 800px; /* Ajusta el ancho máximo según tus necesidades */
+    
+}
+
+.contenedor-video {
+    margin-top: 40px; /* Espaciado opcional entre el texto y el video */
+    
+}
+.redes {
+    margin-top: 60px; /* Espaciado opcional entre el video y las redes sociales */
+}
+
+/* Asegúrate de incluir estilos específicos para las redes sociales según tu diseño */
+.redes a {
+    margin-right: 30px; /* Espaciado entre iconos de redes sociales */
+}
+
 /*Para poner los menus en horizontal*/
 .contenedor-header header ul{
     display: flex; /*Coloca los menus en forma horizontal*/
-    margin-right: 135px; /*Empuja a los botones hacia el lado  derecho*/
+    margin-right: 180px; /*Empuja a los botones hacia el lado  derecho*/
 }
 /*texto del menu*/
 .contenedor-header header nav ul li a{
@@ -80,5 +114,25 @@ img{
     
     
 }
-    
-    
+/* SECCION SERVICIO ----------------------------------------------------*/
+.servicios{
+    background: #8E0E00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    padding: 50px 20px; /*Separa los texto de los margenes de las pantallas*/
+
+}
+
+
+
+
+
+/* PANTALLA INICIO--------------------------------------------------- */
+.Inicio{
+    background-image: url(../Imagenes/FondoInicio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+  
