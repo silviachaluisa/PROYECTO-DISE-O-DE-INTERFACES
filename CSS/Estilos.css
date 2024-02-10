@@ -6,7 +6,7 @@
     background-attachment: fixed;
 }
 
-/* BOTON INICIAR SESION y REGISTRO */
+/* Botones iniciar sesion y registro */
 .Botones a{
     position: relative;
     background-color: rgb(204, 14, 14); /*Borde de los botones*/
@@ -35,8 +35,8 @@
     position:relative;
     z-index: 1;
 }
-
-/* ENCABEZADO ------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------*/
+/* ENCABEZADO ---------------------------------------------------------------------------------------------*/
 html{
     scroll-behavior: smooth; /*Me permite deslizar cuando hago click en los modulos*/
 }
@@ -73,6 +73,7 @@ img{
 .contenido-inicio {
     text-align: center; /*Centra los iconos de las redes sociales*/
     max-width: 800px; /* Ajusta el ancho máximo según tus necesidades */
+   
     
 }
 
@@ -81,18 +82,132 @@ img{
     
 }
 .redes {
-    margin-top: 60px; /* Espaciado opcional entre el video y las redes sociales */
+    margin-top: 30px; /* Espaciado opcional entre el video y las redes sociales */
+    display: flex; /*Coloca los iconos en horizontal*/
+    justify-content: center; /*Centra los iconos en la pantalla*/
+    
+    
+    
 }
 
 /* Asegúrate de incluir estilos específicos para las redes sociales según tu diseño */
 .redes a {
     margin-right: 30px; /* Espaciado entre iconos de redes sociales */
+    color: rgb(5, 5, 5); /*Color de los iconos de redes sociales*/
+    font-size: 30px; /*Tamaño de los iconos de las redes sociales*/
+    height: 60px;
+    width: 60px;
+    background: rgb(248, 245, 245);
+    line-height: 60px;/*Centro los iconos dentro del background*/
+    border-radius:50% ;
+    display: block;
+    position: relative;
+    transition: .5s;
+       
 }
+.redes a:before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0.9);
+    transition: .5s;
+}
+/*Sirve para colocarle los fondos con colores unicos a cada uno de los icones*/
+.redes a:nth-child(1):before{
+    background: blue;
+
+}
+.redes a:nth-child(2):before{
+   background: #900a6e
+
+}
+.redes a:nth-child(3):before{
+    background: #f1f2f3
+
+}
+.redes a:nth-child(4):before{
+    background: #d80d0d
+
+}
+.redes a:nth-child(5):before{
+    background: #218d15
+
+}
+/*-----------------------------------------*/
+.redes a:hover:before{
+    filter:blur(3px);
+    transform: scale(1.2);
+
+}
+/*Sirve para colocar los box shadow a cada uno de los iconos*/
+.redes a:nth-child(1):before{
+    box-shadow: 0 0 15px #1125c3
+
+}
+.redes a:nth-child(2):before{
+    box-shadow: 0 0 15px #c311b4
+
+}.redes a:nth-child(3):before{
+    box-shadow: 0 0 15px #fffdfd
+
+}.redes a:nth-child(4):before{
+    box-shadow: 0 0 15px #d30a0a
+
+}.redes a:nth-child(5):before{
+    box-shadow: 0 0 15px #299d17
+
+}
+/*----------------------------------------------------------*/
+
+/*Sirve para que solo facebook este de los colores que coloque*/
+.redes a:nth-child(1):hover{
+    color: blue;
+    box-shadow: 0 0 15px #1125c3;
+    text-shadow: 0 0 15px #1125c3;
+    background-color: white;
+
+}
+.redes a:nth-child(2):hover{
+    color: rgb(97, 4, 83);
+    box-shadow: 0 0 15px #7d056d;
+    text-shadow: 0 0 15px #9c0d82;
+    background-color: white;
+
+}
+.redes a:nth-child(3):hover{
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 15px #000000;
+    text-shadow: 0 0 15px #070707;
+    background-color: white;
+
+}
+.redes a:nth-child(4):hover{
+    color: rgb(218, 28, 22);
+    box-shadow: 0 0 15px #990909;
+    text-shadow: 0 0 15px #d90f0f;
+    background-color: white;
+
+}
+.redes a:nth-child(5):hover{
+    color: rgb(34, 190, 26);
+    box-shadow: 0 0 15px #11c311;
+    text-shadow: 0 0 15px #11c32f;
+    background-color: white;
+
+}
+
+/*-----------------------------------------------------------*/
+
 
 /*Para poner los menus en horizontal*/
 .contenedor-header header ul{
     display: flex; /*Coloca los menus en forma horizontal*/
-    margin-right: 180px; /*Empuja a los botones hacia el lado  derecho*/
+    margin-right: 330px; /*Empuja a los botones hacia el lado  derecho*/
 }
 /*texto del menu*/
 .contenedor-header header nav ul li a{
@@ -114,11 +229,14 @@ img{
     
     
 }
-/* SECCION SERVICIO ----------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+/* SECCION SERVICIO ----------------------------------------------------------------------------------------------------------------*/
 .servicios{
-    background: #8E0E00;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   background-image: url("../Imagenes/ImgServ/Fondo.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+
+    
     color: white;
     padding: 50px 20px; /*Separa los texto de los margenes de las pantallas*/
 
@@ -127,8 +245,8 @@ img{
 
 
 
-
-/* PANTALLA INICIO--------------------------------------------------- */
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+/* INICIAR SESION------------------------------------------------------------------------------------------------------------------------- */
 .Inicio{
     background-image: url(../Imagenes/FondoInicio.jpg);
     background-repeat: no-repeat;
