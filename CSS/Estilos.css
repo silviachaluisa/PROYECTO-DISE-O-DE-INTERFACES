@@ -126,7 +126,6 @@ img{
     
 }
 
-/* Asegúrate de incluir estilos específicos para las redes sociales según tu diseño */
 .redes a {
     margin-right: 30px; /* Espaciado entre iconos de redes sociales */
     color: rgb(5, 5, 5); /*Color de los iconos de redes sociales*/
@@ -323,7 +322,16 @@ img{
     width: 60%; /*Tamaño de las imagenes*/
     display: block;
 }
-
+.contenido-seccion p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contenido-seccion h3{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: underline;
+   color: #f9f7f7;
+}
 /*---------------------------------------------------------------------------------------------------------------------------------*/
 /* SECCION SERVICIO ----------------------------------------------------------------------------------------------------------------*/
 .servicios{
@@ -367,7 +375,7 @@ img{
     url(../Imagenes/FondoContacto.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 110vh; /*tamaño de la seccion*/
+    height: 120vh; /*tamaño de la seccion*/
     display: flex;
     align-items: center;
     color: white;
@@ -416,8 +424,18 @@ img{
     position: relative;
     z-index: 10;
 }
+.contacto .col iframe{
+    width: 100%;
+    margin-left: 30%;
+}
+.contacto .col .info{
+    width: 100%;
+    margin-left: 20%;
+}
+
 .contacto .col .info ul{
     list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .contacto .col .info ul li{
     margin-bottom: 20px;
