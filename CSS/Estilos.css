@@ -66,7 +66,7 @@ img{
 /*Para poner los menus en horizontal*/
 .contenedor-header header ul{
     display: flex; /*Coloca los menus en forma horizontal*/
-    margin-right: 90px; /*Empuja a los botones hacia el lado  derecho*/
+    margin-right: 220px; /*Empuja a los botones hacia el lado  derecho*/
 }
 /*texto del menu*/
 .contenedor-header header nav ul li a{
@@ -112,13 +112,15 @@ img{
 .siguenos{
     color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
+    
 }
 .redes {
     margin-top: 20px; /* Espaciado opcional entre el video y las redes sociales */
     display: flex; /*Coloca los iconos en horizontal*/
     justify-content: center; /*Centra los iconos en la pantalla*/
     margin-bottom: 30px; /*separa los iconos de la parte del backgroun de trabajo*/
+   
     
     
     
@@ -150,6 +152,7 @@ img{
     z-index: -1;
     transform: scale(0.9);
     transition: .5s;
+    
 }
 /*Sirve para colocarle los fondos con colores unicos a cada uno de los icones*/
 .redes a:nth-child(1):before{
@@ -357,8 +360,74 @@ img{
     width: 100%;
     display: block;
 }
+/*-------------------------------------------------------------------------------------------------------------*/
+/* SECCION CONTACTOS -------------------------------------------------------------------------------------------*/
+.contacto{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),
+    url(../Imagenes/FondoContacto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh; /*tamaño de la seccion*/
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 50px 20px; /*Separa los texto de los margenes de las pantallas*/
+}
+.contacto .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.contacto h2{
+    font-size: 48px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    padding: 20px 0;
+}
+.contacto .fila{
+    display: flex;
+    
 
-
+}
+.contacto .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+.contacto .col input, .contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #19191a;
+    color: #fff7f7;
+    font-size: 18px;
+}
+.contacto button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff; /*Color del borde del boton enviar mensaje*/
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.contacto .col .info ul{
+    list-style: none;
+}
+.contacto .col .info ul li{
+    margin-bottom: 20px;
+}
+.contacto .col .info ul li i{
+    color: #feffff;
+    display: inline-block;
+    margin-right: 20px;
+} 
+   
 
 
 
@@ -367,9 +436,26 @@ img{
 /*----------------------------------------------------------------------------------------------------------------------------------------*/
 /* INICIAR SESION------------------------------------------------------------------------------------------------------------------------- */
 .Inicio{
-    background-image: url(../Imagenes/FondoInicio.jpg);
+    background: linear-gradient(to top, rgba(83, 2, 2, 0.8),rgba(117, 9, 9, 0.8)),
+    url(../Imagenes/FondoInicio.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 50px 20px; /*Separa los texto de los margenes de las pantallas*/
+}
+.Registro{
+    background: linear-gradient(to top, rgba(83, 2, 2, 0.8),rgba(117, 9, 9, 0.8)),
+    url(../Imagenes/FondoInicio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 50px 20px; /*Separa los texto de los margenes de las pantallas*/
 }
   
   
