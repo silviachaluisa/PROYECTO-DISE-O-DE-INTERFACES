@@ -92,7 +92,7 @@ img{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 120vh; /* Ajusta la altura según tus necesidades */
+    height: 110vh; /* Ajusta la altura según tus necesidades */
     color: white;
 
 }
@@ -239,28 +239,28 @@ img{
 /*-----------------------------------------------------------*/
 /* Estilo para la barra de navegación "nav2" */
 .nav2 {
-    background: #403B4A;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #E7E9BB, #403B4A);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #E7E9BB, #403B4A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    margin-top: 20px;
-    width: 100%;
-    
-    padding: 25px;
+   position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 20px; /* Ajusta este valor según tus preferencias para dejar espacio desde el borde de la pantalla */
+    z-index: 999; /* Ajusta este valor si es necesario para que esté por encima de otros elementos */
 }
 
-.nav2 ul li {
+/* Ajusta el estilo del ul y li según tus preferencias */
+.nav2 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav2 li {
     display: inline-block;
-    margin: 0 20px; /*Separa los textos entre si*/
+    margin-right: 10px;
 }
 
-/* Estilo para los enlaces dentro de "nav2" */
 .nav2 a {
     text-decoration: none;
-    color: #000000; /* Cambia el color del texto según tus preferencias */
-    font-weight: bold;
-    font-size: 20px; /* Cambia el tamaño de fuente según tus preferencias */
-    font-family: sans-serif; /*Opcion como fondo de acerca*/
+    color: #ffffff; /* Ajusta el color según tus preferencias */
 }
 
 
@@ -475,5 +475,52 @@ img{
     color: white;
     padding: 50px 20px; /*Separa los texto de los margenes de las pantallas*/
 }
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/* SECCION METODOS DE PAGO ---------------------------------------------------------------------------------------------------------*/
+.metodos{
+    background: linear-gradient(to top, rgba(15, 14, 14, 0.5),rgba(34, 32, 32, 0.6)),
+    url(../Imagenes/ImgMetodos/Fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 110vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 50px 50px; /*Separa los texto de los margenes de las pantallas*/
+}
+.metodos .contenido-seccion{
+    max-width: 100%;
+}
+.metodos h2{
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin-top: 80px;
+}
+.metodos .galeria{
+    display: flex; /*Modo horizontal*/
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+.metodos .galeria .proyecto{
+    position: relative;
+    margin: 20px; /*Separacion entre imagenes*/
+    cursor: pointer;
+
+}
+.contenido-seccion h4{
+    text-align: center;
+    font-family: cursive;
+    font-size: 20px;
+    color: white;
+    margin: auto; /*Separacion entre el texto y las imagenes*/
+
+}
+.contenido-seccion .galeria img{
+    width: 15rem;
+
+}
+
   
   
