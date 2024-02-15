@@ -279,6 +279,7 @@ img{
     height: 100vh;
     display: flex;
     align-items: center;
+    width: 100%;
     color: white;
     padding: 50px 20px; /*Separa los texto de los margenes de las pantallas*/
 }
@@ -296,7 +297,7 @@ img{
     justify-content: center;
 }
 .acerca .multimarca .marcas{
-    position: relative;
+    /* position: relative; */
     max-width: 150px; /* hace que mientras aumento el numero las imagenes se van acomodando en filas*/
     height: fit-content;
     margin: 10px;
@@ -305,7 +306,7 @@ img{
 }
 .acerca .multimarca .marcas img{
     width: 60%; /*Tamaño de las imagenes*/
-    display: block;
+    /* display: block; */
 }
 .acerca .Productos{
     display: flex; /*Modo horizontal*/
@@ -314,7 +315,7 @@ img{
 }
 
 .acerca .Productos .producto{
-    position: relative;
+    /* position: relative; */
     max-width: 150px; /* hace que mientras aumento el numero las imagenes se van acomodando en filas*/
     height: fit-content;
     margin: 10px;
