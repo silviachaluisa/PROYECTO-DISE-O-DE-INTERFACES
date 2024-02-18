@@ -10,12 +10,12 @@
 </head>
 <body class="Inicio">
     <div class="container text-center"> 
-        <div class="row justify-content-evenly">
-            <div class="col-md-4">
+        <div class="row">
+            <div class="col">
                 <img src="./Imagenes/Logo.jpg" alt="Logo">
                 <p>Bienvenido a la página de inicio de sesión.</p>
             </div>
-            <div class="col-md-4 ms-auto"> 
+            <div class="col"> 
                 <form action="#" class="formulario-ingreso" method="post">
                     <h2>Inicio de sesion</h2>
                     <label for="usuario">Usuario: </label><br>
@@ -29,8 +29,9 @@
                     </div>
             
                     <div class="botones">
-                        <button type="submit">Iniciar</button> 
-                    </div>  
+                        <button type="submit">Ingresar</button>
+                        <button class="cancelar" onclick="window.location.href='Home.html'">Cancelar</button>
+                    </div>
                 </form>
             </div>
         </div>
