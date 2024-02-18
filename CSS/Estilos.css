@@ -524,9 +524,7 @@ img{
     color: white;
     /* padding: 50px 20px; Separa los texto de los margenes de las pantallas */
 }
-.formulario-registro{
-    
-}
+
 @media screen  and (max-width:991px){
     .formulario-ingreso{
         max-width: 100%;
