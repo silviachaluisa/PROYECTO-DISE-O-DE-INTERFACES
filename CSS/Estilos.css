@@ -462,46 +462,78 @@ img{
     url(../Imagenes/FondoInicio.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     height: 100vh;
     display: flex;
     align-items: center;
     color: white;
-    padding: 50px 20px; /*Separa los texto de los margenes de las pantallas*/
+    /* padding: 50px 20px; Separa los texto de los margenes de las pantallas */
 }
-
 .formulario-ingreso{
-    width: 43%;
-    max-width: 600px;/*Establece el ancho maximo del formulario para que se ajusten en dispositivos moviles*/
-    margin: 0 0;
-    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    color: #000000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    width: max-content;/*Ajusta el ancho del contenedor al contenido*/
+    text-align: center;
 }
 .formulario-ingreso label{
     font-family:Arial, Helvetica, sans-serif;
-    display: block;
-    margin-top: 15px;
+    margin-top: 8px;
 }
-
 .formulario-ingreso input{
     width: 100%;
     border: 1px solid #ccc;
     border-radius: 8px;
     box-sizing: border-box;
-    outline: none;
     padding: 10px;
     font-size: 16px;
 }
+.formulario-ingreso #caja-elementos{
+    text-align: end;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.formulario-ingreso #caja-elementos a{
+    text-decoration: none;
+    color: rgb(102, 101, 101);
+}
+.formulario-ingreso button[type="submit"] {
+    width: 50%;
+    padding: 3%;
+    margin-top: 8px;
+    border-radius: 999px;
+    background-color: #f7a50c;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 
 .Registro{
     background: linear-gradient(to top, rgba(83, 2, 2, 0.8),rgba(117, 9, 9, 0.8)),
     url(../Imagenes/FondoInicio.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     height: 100vh;
     display: flex;
     align-items: center;
     color: white;
-    padding: 50px 20px; /*Separa los texto de los margenes de las pantallas*/
+    /* padding: 50px 20px; Separa los texto de los margenes de las pantallas */
 }
+.formulario-registro{
+    
+}
+@media screen  and (max-width:991px){
+    .formulario-ingreso{
+        max-width: 100%;
+        margin: auto;
+    }
+}
+
 /*----------------------------------------------------------------------------------------------------------------------------------*/
 /* SECCION METODOS DE PAGO ---------------------------------------------------------------------------------------------------------*/
 .metodos{
