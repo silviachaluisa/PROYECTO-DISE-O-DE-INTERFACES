@@ -1,4 +1,3 @@
-document.getElementById("cancelarBoton").addEventListener('click', function(){
+function Regresar(){
     window.location.href="Home.html";
-
-});
+}
