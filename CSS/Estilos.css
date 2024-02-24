@@ -278,10 +278,11 @@ img{
 .nav2 a {
     /* text-decoration: none; */
     color: #000000; /* Ajusta el color según tus preferencias */
-    font-size: 35px;
+    font-size: 30px;
     font-family:fantasy;
     padding: 17px;
     margin-bottom: 20px;
+    text-decoration: overline;
     
 }
 
