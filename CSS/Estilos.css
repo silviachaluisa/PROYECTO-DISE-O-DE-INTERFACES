@@ -75,7 +75,7 @@ img{
 /*Para poner los menus en horizontal*/
 .contenedor-header header ul{
     display: flex; /*Coloca los menus en forma horizontal*/
-    margin-right: 220px; /*Empuja a los botones hacia el lado  derecho*/
+    margin-right: 250px; /*Empuja a los botones hacia el lado  derecho*/
 }
 /*texto del menu*/
 .contenedor-header header nav ul li a{
@@ -202,7 +202,7 @@ img{
 }
 /*Sirve para colocar los box shadow a cada uno de los iconos*/
 .redes a:nth-child(1):before{
-    box-shadow: 0 0 15px #1125c3
+    box-shadow: 0 0 15px #001eff
 
 }
 .redes a:nth-child(2):before{
@@ -212,7 +212,7 @@ img{
     box-shadow: 0 0 15px #fffdfd
 
 }.redes a:nth-child(4):before{
-    box-shadow: 0 0 15px #d30a0a
+    box-shadow: 0 0 15px #e80000
 
 }.redes a:nth-child(5):before{
     box-shadow: 0 0 15px #299d17
@@ -269,18 +269,20 @@ img{
 /* Ajusta el estilo del ul y li según tus preferencias */
 .nav2 ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    background-color: #ffffff; 
+  
 }
 
-.nav2 li {
-    display: inline-block;
-    margin-right: 10px;
-}
+
 
 .nav2 a {
-    text-decoration: none;
-    color: #ffffff; /* Ajusta el color según tus preferencias */
+    /* text-decoration: none; */
+    color: #000000; /* Ajusta el color según tus preferencias */
+    font-size: 35px;
+    font-family:fantasy;
+    padding: 17px;
+    margin-bottom: 20px;
+    
 }
 
 
@@ -300,9 +302,7 @@ img{
     color: white;
     padding: 50px 20px; /*Separa los texto de los margenes de las pantallas*/
 }
-.acerca .contenido-seccion{
-    max-width: 100%;
-}
+
 .acerca h2{
     font-size: 48px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -316,33 +316,35 @@ img{
 .acerca .multimarca .marcas{
     /* position: relative; */
     max-width: 150px; /* hace que mientras aumento el numero las imagenes se van acomodando en filas*/
-    height: fit-content;
     margin: 10px;
     cursor: pointer;
 
 }
 .acerca .multimarca .marcas img{
     width: 60%; /*Tamaño de las imagenes*/
-    /* display: block; */
+    
+    
 }
+
 .acerca .Productos{
     display: flex; /*Modo horizontal*/
     flex-wrap: wrap;
     justify-content: center;
 }
-
 .acerca .Productos .producto{
     /* position: relative; */
     max-width: 150px; /* hace que mientras aumento el numero las imagenes se van acomodando en filas*/
-    height: fit-content;
     margin: 10px;
     cursor: pointer;
+    
 
 }
 .acerca .Productos .producto img{
-    width: 60%; /*Tamaño de las imagenes*/
-    display: block;
+    width: 70%; /*Tamaño de las imagenes*/
+    
+    
 }
+
 .contenido-seccion p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -475,8 +477,8 @@ img{
 /*----------------------------------------------------------------------------------------------------------------------------------------*/
 /* INICIAR SESION------------------------------------------------------------------------------------------------------------------------- */
 .Inicio{
-    background: linear-gradient(to top, rgba(64, 48, 48, 0.8),rgba(29, 21, 21, 0.8)),
-    url(../Imagenes/FondoInicio/FondoInicio.jpg);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),
+    url(../Imagenes/FondoInicio/Imagen1.jpg);
     
     
     background-attachment: fixed;
@@ -573,8 +575,8 @@ img{
 }
 
 .Registro{
-    background: linear-gradient(to top, rgba(64, 48, 48, 0.8),rgba(29, 21, 21, 0.8)),
-    url(../Imagenes/FondoInicio/FondoInicio.jpg);
+    background: linear-gradient(to top, rgba(12, 9, 9, 0.8),rgba(1, 1, 1, 0.8)),
+    url(../Imagenes/FondoInicio/Imagen1.jpg);
    
     background-attachment: fixed;
     height: 100vh;
