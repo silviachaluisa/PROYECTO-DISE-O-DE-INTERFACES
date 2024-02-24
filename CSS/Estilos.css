@@ -1,10 +1,19 @@
 /* FONDO DE LA PAGINA */
-.Home{
-    background-image: url(../Imagenes/Fondo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+*{ /*Selecciona todos los elementos en la pagina y las aplica las siguientes reglas*/
+    box-sizing: border-box; /*Es una regla */
+    font-family: 'Work Sans';
+    margin: 0; /*Elimina cualquier margen predeterminado que los navegadores puoedan aplicar*/
+    padding: 0;/*Elimina cualquier relleno predeterminado que los navegadores puedan aplicar*/
 }
+.inicio{
+    background-image: url(../Imagenes/Fondo.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
 /*-----------------------------------------------------------------------------------------------------------*/
 /* ENCABEZADO ---------------------------------------------------------------------------------------------*/
 
@@ -84,6 +93,14 @@ img{
 .contenedor-header header nav ul li a:hover{
     color: grey;
 }
+/* .nav-responsive{
+    background-color: #000000;
+    color:#fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+} */
 /*------------------------------------------------------------------------------------------------------*/
 /* SECCION INICIO---------------------------------------------------------------------------------------*/
 /*video*/
@@ -206,37 +223,37 @@ img{
 /*Sirve para que solo facebook este de los colores que coloque*/
 .redes a:nth-child(1):hover{
     color: blue;
-    box-shadow: 0 0 15px #1125c3;
+    box-shadow: 0 0 55px #1125c3;
     text-shadow: 0 0 15px #1125c3;
     background-color: white;
 
 }
 .redes a:nth-child(2):hover{
-    color: rgb(97, 4, 83);
-    box-shadow: 0 0 15px #7d056d;
-    text-shadow: 0 0 15px #9c0d82;
+    color: rgb(252, 24, 218);
+    box-shadow: 0 0 55px #e303c5;
+    text-shadow: 0 0 15px #f20fc8;
     background-color: white;
 
 }
 .redes a:nth-child(3):hover{
     color: rgb(0, 0, 0);
-    box-shadow: 0 0 15px #000000;
-    text-shadow: 0 0 15px #070707;
+    box-shadow: 0 0 55px #ffffff;
+    text-shadow: 0 0 15px #fffdfd;
     background-color: white;
 
 }
 .redes a:nth-child(4):hover{
     color: rgb(218, 28, 22);
-    box-shadow: 0 0 15px #990909;
+    box-shadow: 0 0 55px #990909;
     text-shadow: 0 0 15px #d90f0f;
     background-color: white;
 
 }
 .redes a:nth-child(5):hover{
     color: rgb(34, 190, 26);
-    box-shadow: 0 0 15px #11c311;
+    box-shadow: 0 0 55px #11c311;
     text-shadow: 0 0 15px #11c32f;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 
 }
 /*-----------------------------------------------------------*/
@@ -268,7 +285,6 @@ img{
 
 
 
-
 /*---------------------------------------------------------------------------------------------------------------------------------*/
 /* SECCION ACERCA DE NOSOTROS----------------------------------------------------------------------------------------------------------------*/
 .acerca{
@@ -276,10 +292,11 @@ img{
     url(../Imagenes/ImgAcerca/Fondo1.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 110vh;
     display: flex;
     align-items: center;
-    width: 100%;
+
+    /* width: 100%; */ /*Si esto no se elimina toda la pagina web se mueve*/
     color: white;
     padding: 50px 20px; /*Separa los texto de los margenes de las pantallas*/
 }
@@ -341,15 +358,15 @@ img{
 .servicios{
     background: linear-gradient(to top, rgba(59, 61, 62, 0.8),rgb(41, 51, 56, 0.8)),
     url(../Imagenes/ImgServ/Fondo.jpg);
-    height: 100vh;
+    height: 110vh;
+
+   
     display: flex;
     align-items: center;
     color: white;
     padding: 50px 20px; /*Separa los texto de los margenes de las pantallas*/
 }
-.servicios .contenido-seccion{
-    max-width: 100%;
-}
+
 .servicios h2{
     font-size: 48px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -361,15 +378,15 @@ img{
     justify-content: center;
 }
 .servicios .galeria .proyecto{
-    position: relative;
-    max-width: 340px;
+    
+    
     height: fit-content;
     margin: 10px;
     cursor: pointer;
 
 }
 .servicios .galeria .proyecto img{
-    width: 100%;
+   width: 20rem;
     display: block;
 }
 /*-------------------------------------------------------------------------------------------------------------*/
@@ -379,11 +396,12 @@ img{
     url(../Imagenes/FondoContacto.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 120vh; /*tamaño de la seccion*/
+    height: 130vh; /*tamaño de la seccion*/
     display: flex;
     align-items: center;
     color: white;
     padding: 50px 20px; /*Separa los texto de los margenes de las pantallas*/
+    box-sizing: border-box;
 }
 .contacto .contenido-seccion{
     max-width: 1100px;
@@ -403,7 +421,7 @@ img{
 .contacto .col{
     width: 50%;
     padding: 10px;
-    position: relative;
+    
 }
 .contacto .col input, .contacto .col textarea{
     display: block;
@@ -454,24 +472,24 @@ img{
 
 
 
-
 /*----------------------------------------------------------------------------------------------------------------------------------------*/
 /* INICIAR SESION------------------------------------------------------------------------------------------------------------------------- */
 .Inicio{
-    background: linear-gradient(to top, rgba(83, 2, 2, 0.8),rgba(117, 9, 9, 0.8)),
-    url(../Imagenes/FondoInicio.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: linear-gradient(to top, rgba(64, 48, 48, 0.8),rgba(29, 21, 21, 0.8)),
+    url(../Imagenes/FondoInicio/FondoInicio.jpg);
+    
+    
     background-attachment: fixed;
     height: 100vh;
     display: flex;
     align-items: center;
     color: white;
+    
     /* padding: 50px 20px; Separa los texto de los margenes de las pantallas */
 }
 .logo-forms{
-    width: 85%;
-    height: auto;
+   margin-left: 20px;
+   margin: 20px;
     border-radius: 10px; /* Ajusta el valor según la cantidad de redondeo deseada */
     overflow: hidden; /* Oculta cualquier parte de la imagen que se extienda más allá del borde redondeado */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.9); /* Ajusta el valor de acuerdo a la intensidad deseada */ 
@@ -555,10 +573,9 @@ img{
 }
 
 .Registro{
-    background: linear-gradient(to top, rgba(83, 2, 2, 0.8),rgba(117, 9, 9, 0.8)),
-    url(../Imagenes/FondoInicio.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: linear-gradient(to top, rgba(64, 48, 48, 0.8),rgba(29, 21, 21, 0.8)),
+    url(../Imagenes/FondoInicio/FondoInicio.jpg);
+   
     background-attachment: fixed;
     height: 100vh;
     display: flex;
@@ -581,8 +598,8 @@ img{
     url(../Imagenes/ImgMetodos/Fondo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 110vh;
+    /* width: 100%; */
+    height: 100vh;
     display: flex;
     align-items: center;
     color: white;
@@ -604,7 +621,7 @@ img{
    
 }
 .metodos .galeria .proyecto{
-    position: relative;
+    
     margin: 25px; /*Separacion entre imagenes*/
     cursor: pointer;
 
@@ -621,6 +638,7 @@ img{
     width: 13rem; /*Tamaño de las imagenes de metodos*/
 
 }
+
 
   
   
