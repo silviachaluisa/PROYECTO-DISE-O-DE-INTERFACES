@@ -290,6 +290,7 @@ img{
 
 /*---------------------------------------------------------------------------------------------------------------------------------*/
 /* SECCION ACERCA DE NOSOTROS----------------------------------------------------------------------------------------------------------------*/
+.bienvenido,
 .acerca{
     background: linear-gradient(to top, rgba(7, 7, 7, 0.8),rgba(0, 0, 0, 0.8)),
     url(../Imagenes/ImgAcerca/Fondo1.jpeg);
@@ -641,6 +642,63 @@ img{
     width: 13rem; /*Tamaño de las imagenes de metodos*/
 
 }
+
+/* PANTALLA BIENVENIDO -----------------------------------------------------------------------------------*/
+.bienvenido{
+    display: flex;
+    flex-direction: column; /*Coloca todo el contenido en una sola xolumna y en el centro*/
+    justify-content: center;
+    text-align: center;
+    height: 70vh;
+    cursor: pointer;
+
+}
+.encabezado h1{
+    font-size: 35px;
+    text-align: center;
+    color: #ffffff;
+}
+.modulo:hover{
+    background-color: rgb(100, 16, 16);
+    
+}
+
+.modulos{
+    display: grid; /*Coloca las imagenes en dos columnas y dos filas*/
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    text-align: center;
+}
+.encabezado .logo img{
+   width: 20%;
+   align-self: flex-start;
+   margin-bottom: 50px;
+   
+}
+.encabezado{
+    background-color: #000000;
+}
+
+.modulo img {
+    width: 70%;
+    
+    height: 120px;
+    
+}
+
+button  {
+    margin-top: 10px;
+    color: #111411;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 5px 15px;
+    background-color: #4cbd3a;
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+
 
 
   
