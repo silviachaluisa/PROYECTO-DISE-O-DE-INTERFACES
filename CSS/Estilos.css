@@ -1,26 +1,80 @@
 /* FONDO DE LA PAGINA */
 *{ /*Selecciona todos los elementos en la pagina y las aplica las siguientes reglas*/
-    box-sizing: border-box; /*Es una regla */
+    
+    box-sizing: border-box;
     font-family: 'Work Sans';
     margin: 0; /*Elimina cualquier margen predeterminado que los navegadores puoedan aplicar*/
     padding: 0;/*Elimina cualquier relleno predeterminado que los navegadores puedan aplicar*/
 }
-.inicio{
-    background-image: url(../Imagenes/Fondo.jpg);
-    background-size: cover;
-    height: 100vh;
-    color: #fff;
-    display: flex;
-    align-items: center;
+html{
+    scroll-behavior: smooth; /*Me permite deslizar cuando hago click en los modulos*/
 }
-
 /*-----------------------------------------------------------------------------------------------------------*/
 /* ENCABEZADO ---------------------------------------------------------------------------------------------*/
-
+.contenedor-header{
+    background-color: black; /*Fondo del encabezado*/
+    position: fixed; /*mantiene estatica el encabezado en todas las secciones*/
+    width: 100%; /*Define el tamaño del encabezado a lo largo*/
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor-header header{
+    display: flex; /*Coloca el nav y los botones en la parte de arriba junto al logo*/
+    align-items: center;
+    justify-content: space-between; /*Espacio entre los textos y los botones*/
+    padding: 15px 40px; /*La distancia de los botones con respecto al margen derecho*/
+    
+ 
+ }
+ /* logo */
+.contenedor-header header .logo img{
+    width: 15rem;    
+}
+/*Para poner los menus en horizontal*/
+.contenedor-header header ul{
+    display: flex; /*Coloca los menus en forma horizontal*/
+    list-style: none;
+}
+/*texto del menu*/
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: white;
+    margin: 0 15px;
+    padding: 3px; /*Separacion entre palabras*/
+    transition: .5s;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 19px;
+}
+.contenedor-header header nav ul li a:hover{
+    color: grey;
+}
 .contenedor-header .Botones a{
     margin-left: 20px; /*para la separaciones entre botones inicio y registro*/
-  
 } 
+.nav-responsive{
+    background-color: #af0303;
+    color:#fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+
+.nav-responsive i {
+    font-size: 20px; /* Ajusta el tamaño del ícono según sea necesario */
+}
+
+
+
+
+
+
+
+
 /* Botones iniciar sesion y registro */
 .Botones a{
     position: relative;
@@ -32,6 +86,7 @@
     letter-spacing: 0.2em; /*Separacion entre las letras dentro del boton*/
     padding: 10px 20px; /*Borde alrededor de los botones*/
     transition: 0.5s;
+    
 }
 .Botones a:hover{
     background: var(--clr);
@@ -50,69 +105,27 @@
     position:relative;
     z-index: 1;
 }
-html{
-    scroll-behavior: smooth; /*Me permite deslizar cuando hago click en los modulos*/
-}
-.contenedor-header{
-    background-color: black; /*Fondo del encabezado*/
-    padding: 3px;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed; /*mantiene estatica el encabezado en todas las secciones*/
-    width: 100%; /*Define el tamaño del encabezado a lo largo*/
-}
-.contenedor-header header{
-   display: flex; /*Coloca el nav y los botones en la parte de arriba junto al logo*/
-   align-items: center;
-   
 
-}
-/* logo */
-img{
-    width: 14rem;  
-    
-}
-/*Para poner los menus en horizontal*/
-.contenedor-header header ul{
-    display: flex; /*Coloca los menus en forma horizontal*/
-    margin-right: 250px; /*Empuja a los botones hacia el lado  derecho*/
-}
-/*texto del menu*/
-.contenedor-header header nav ul li a{
-    text-align: none;
-    color: white;
-    margin: 0 15px;
-    transition: .5s;
-    text-decoration: none;
-    font-weight: bold;
-   font-family: monospace;
-   font-size: 19px;
 
-   
-}
-.contenedor-header header nav ul li a:hover{
-    color: grey;
-}
-/* .nav-responsive{
-    background-color: #000000;
-    color:#fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    display: none;
-} */
+
+
+
+
 /*------------------------------------------------------------------------------------------------------*/
 /* SECCION INICIO---------------------------------------------------------------------------------------*/
 /*video*/
-#inicio {
+.inicio{
+    background-image: url(../Imagenes/Fondo.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 105vh; /* Ajusta la altura según tus necesidades */
-    color: white;
-
+   
 }
+
 
 .contenido-inicio {
     text-align: center; /*Centra los iconos de las redes sociales*/
@@ -156,7 +169,6 @@ img{
     line-height: 60px;/*Centro los iconos dentro del background*/
     border-radius:50% ;
     display: block;
-    position: relative;
     transition: .5s;
        
 }
@@ -257,19 +269,9 @@ img{
 
 }
 /*-----------------------------------------------------------*/
-/* Estilo para la barra de navegación "nav2" */
-.nav2 {
-   position: absolute;
-    right: 0;
-    bottom: 0;
-    margin: 20px; /* Ajusta este valor según tus preferencias para dejar espacio desde el borde de la pantalla */
-    z-index: 999; /* Ajusta este valor si es necesario para que esté por encima de otros elementos */
-}
-
-/* Ajusta el estilo del ul y li según tus preferencias */
 .nav2 ul {
     list-style: none;
-    background-color: #ffffff; 
+    background-color: #544848; 
   
 }
 
@@ -278,9 +280,9 @@ img{
 .nav2 a {
     /* text-decoration: none; */
     color: #000000; /* Ajusta el color según tus preferencias */
-    font-size: 30px;
+    font-size: 25px;
     font-family:fantasy;
-    padding: 17px;
+    padding: 15px;
     margin-bottom: 20px;
     text-decoration: overline;
     
@@ -296,7 +298,7 @@ img{
     url(../Imagenes/ImgAcerca/Fondo1.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 110vh;
+    height: 100vh;
     display: flex;
     align-items: center;
 
@@ -305,10 +307,13 @@ img{
     padding: 50px 20px; /*Separa los texto de los margenes de las pantallas*/
 }
 
+.contacto h2,
+.servicios h2,
 .acerca h2{
     font-size: 48px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
+    
 }
 .acerca .multimarca{
     display: flex; /*Modo horizontal*/
@@ -362,36 +367,25 @@ img{
 .servicios{
     background: linear-gradient(to top, rgba(59, 61, 62, 0.8),rgb(41, 51, 56, 0.8)),
     url(../Imagenes/ImgServ/Fondo.jpg);
-    height: 110vh;
+    height: 100vh;
 
-   
     display: flex;
     align-items: center;
     color: white;
-    padding: 50px 20px; /*Separa los texto de los margenes de las pantallas*/
+    padding: 50px 70px; /*Separa los texto de los margenes de las pantallas*/
 }
 
-.servicios h2{
-    font-size: 48px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: center;
-}
 .servicios .galeria{
     display: flex; /*Modo horizontal*/
-    flex-wrap: wrap;
     justify-content: center;
 }
-.servicios .galeria .proyecto{
-    
-    
-    height: fit-content;
+.servicios .galeria .proyecto{ 
     margin: 10px;
     cursor: pointer;
-
 }
 .servicios .galeria .proyecto img{
    width: 20rem;
-    display: block;
+   display: block;
 }
 /*-------------------------------------------------------------------------------------------------------------*/
 /* SECCION CONTACTOS -------------------------------------------------------------------------------------------*/
@@ -411,12 +405,7 @@ img{
     max-width: 1100px;
     margin: auto;
 }
-.contacto h2{
-    font-size: 48px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: center;
-    padding: 20px 0;
-}
+
 .contacto .fila{
     display: flex;
     
@@ -588,6 +577,78 @@ img{
     /* padding: 50px 20px; Separa los texto de los margenes de las pantallas */
 }
 
+/* SECCION RESPONSIVE */
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width:700px){
+    .inicio .redes,
+    .inicio .siguenos,
+    .inicio .contenedor-video{
+        display: block;
+    }
+    .sobremi .fila .col{
+        width: fit-content;
+    }
+
+    .skills .fila{
+        display: block;
+    }
+    .skills .fila .col{
+        width: 100%;
+    }
+    .skills .fila .col .barra-skill{
+        width: 100%;
+    }
+
+    .curriculum .fila{
+        display: block;
+    }
+    .curriculum .fila .col{
+        width: 90%;
+    }
+    .curriculum .fila .derecha{
+        margin-left: 20px;
+    }
+
+    .portfolio .galeria{
+        display: block;
+        width: 100%;
+    }
+    .portfolio .galeria .proyecto{
+        max-width: 100%;
+    }
+    .portfolio .galeria .proyecto img{
+        width: 100%;
+    }
+    .contacto .fila{
+        display: block;
+    }
+    .contacto .fila .col{
+        width: 100%;
+    }
+}
+
 @media screen  and (max-width:991px){
     .formulario-ingreso{
         max-width: 100%;
@@ -603,7 +664,7 @@ img{
     background-size: cover;
     background-repeat: no-repeat;
     /* width: 100%; */
-    height: 110vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     color: white;
@@ -698,8 +759,92 @@ button  {
 }
 
 /* ------------------------------------------------------------------------------------------------- */
+/* 
+SECCION RESPONSIVE */
+@media screen and (max-width: 576px) and (max-width: 768px) {
+    .contenedor-header header {
+        flex-direction: column;
+    }
+
+    .contenedor-header header .logo img {
+        margin-bottom: 10px;
+    }
+
+    .contenedor-header header nav ul {
+        margin-top: 10px;
+    }
+
+    .nav-responsive {
+        display: block;
+    }
+
+    .contenedor-header header nav ul {
+        display: none;
+        flex-direction: column;
+        background: #1e2326;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+    }
+
+    .contenedor-header header nav ul li {
+        margin: 0;
+        text-align: center;
+    }
+
+    .contenedor-header header nav ul.show {
+        display: flex;
+    }
+}
 
 
 
-  
-  
+/* Consulta de medios para hacer la página responsive */
+
+@media screen and (max-width: 768px) {
+    
+    .contenedor-header header {
+        flex-direction: column;
+    }
+   
+
+    .contenedor-header header .logo img {
+        margin-bottom: 10px;
+    }
+
+    .contenedor-header header nav ul {
+        margin-top: 10px;
+    }
+
+    .nav-responsive {
+        display: block;
+    }
+
+    .contenedor-header header nav ul {
+        display: none;
+        flex-direction: column;
+        background: #1e2326;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+    }
+
+    .contenedor-header header nav ul li {
+        margin: 0;
+        text-align: center;
+    }
+
+    .contenedor-header header nav ul.show {
+        display: flex;
+    }
+
+    @media screen and (max-width: 576px) {
+        .contenedor-header header .logo img {
+            width: 80px; /* Ajusta el tamaño del logo para pantallas pequeñas */
+        }
+    
+        /* Otros ajustes específicos para pantallas pequeñas si los necesitas */
+        /* ... */
+    }
