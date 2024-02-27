@@ -2,6 +2,7 @@
 function Regresar(){
     window.location.href="Home.html";
 }
+
 // BOTON INGRESAR
 function ingresar() {
     // Obtener los valores de los campos
@@ -13,9 +14,9 @@ function ingresar() {
         alert("Todos los campos son obligatorios");
     } else {
 
-    
-        window.location.href = "Bienvenido.html";
+        window.location.href = "./Bienvenido.html";
     }
+    // window.location.href = "Bienvenido.html";
 }
 
    
@@ -47,3 +48,5 @@ function seleccionar(){
     document.getElementById("nav").classList = "";
     menuVisible = false;
 }
+
+//Olvidaste la contraseña

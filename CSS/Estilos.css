@@ -280,6 +280,7 @@ html{
 
 /*---------------------------------------------------------------------------------------------------------------------------------*/
 /* SECCION ACERCA DE NOSOTROS----------------------------------------------------------------------------------------------------------------*/
+.Contraseña,
 .bienvenido,
 .acerca{
     background: linear-gradient(to top, rgba(7, 7, 7, 0.8),rgba(0, 0, 0, 0.8)),
@@ -467,11 +468,10 @@ html{
 
 /*----------------------------------------------------------------------------------------------------------------------------------------*/
 /* INICIAR SESION------------------------------------------------------------------------------------------------------------------------- */
+
 .Inicio{
     background: linear-gradient(to top, rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),
     url(../Imagenes/FondoInicio/Imagen1.jpg);
-    
-    
     background-attachment: fixed;
     height: 100vh;
     display: flex;
@@ -487,12 +487,16 @@ html{
     overflow: hidden; /* Oculta cualquier parte de la imagen que se extienda más allá del borde redondeado */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.9); /* Ajusta el valor de acuerdo a la intensidad deseada */ 
 }
+.col h1{
+    color: #ffffff;
+    font-size: 3em;
+}
 .formulario-ingreso{
     background-color: rgb(0, 0, 0);
     border-radius: 15px;
     color: #ffffff;
-    box-shadow: 0 4px 8px 0 rgba(209, 37, 37, 0.9), 0 6px 20px 0 rgba(189, 44, 44, 0.9);
-    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(238, 5, 5, 0.9), 0 6px 20px 0 rgba(189, 44, 44, 0.9);
+    padding: 60px;
     width: max-content;/*Ajusta el ancho del contenedor al contenido*/
     text-align: center;
 }
@@ -517,20 +521,23 @@ html{
 .formulario-ingreso input:hover{
     box-shadow: 0 0 9px rgba(208, 207, 207, 0.9), inset 0 0 10px rgba(255, 255, 255, .4);
 }
-.formulario-ingreso #caja-elementos{
-    text-align: end;
+.formulario-ingreso #caja1{
+    text-align: center;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
-.formulario-ingreso #caja-elementos a{
-    text-decoration: none;
+.formulario-ingreso #caja1 a{
+   
     color: rgb(193, 188, 188);
+    font-size: 25px;
+    font-family:cursive;
 }
 .formulario-ingreso button[type="submit"]{
     width: 50%;
     padding: 3%;
     margin-top: 8px;
     border-radius: 999px;
-    background-color: #e01d1d;
+    background-color: #0c9124;
     border: none;
     cursor: pointer;
     color: white;
@@ -539,7 +546,7 @@ html{
     transition: box-shadow 0.3s ease; /* Añade una transición suave al cambio de color del borde */
 }
 .formulario-ingreso button[type="submit"]:hover {
-    box-shadow: 0 0 9px rgba(240, 86, 35, 0.9), inset 0 0 10px rgba(255, 255, 255, .4);
+    box-shadow: 0 0 9px rgba(13, 79, 4, 0.9), inset 0 0 10px rgba(9, 223, 63, 0.4);
 }
 .botones{
     display: flex;
@@ -552,7 +559,7 @@ html{
     padding: 3%;
     margin-top: 8px;
     border-radius: 999px;
-    background-color: #dc6d23;
+    background-color: #eb0505;
     border: none;
     cursor: pointer;
     text-decoration: none;
@@ -562,7 +569,7 @@ html{
     transition: box-shadow 0.3s ease; /* Añade una transición suave al cambio de color del borde */
 }
 .formulario-ingreso button[class="cancelar"]:hover {
-    box-shadow: 0 0 9px rgba(244, 171, 25, 0.9), inset 0 0 10px rgba(255, 255, 255, .4);
+    box-shadow: 0 0 9px rgba(135, 37, 37, 0.9), inset 0 0 10px rgba(255, 255, 255, .4);
 }
 
 .Registro{
@@ -575,6 +582,9 @@ html{
     align-items: center;
     color: white;
     /* padding: 50px 20px; Separa los texto de los margenes de las pantallas */
+}
+#caja-elementos a{
+    text-align: center;
 }
 
 
@@ -655,6 +665,7 @@ footer .arriba{
 }
 
 /* PANTALLA BIENVENIDO -----------------------------------------------------------------------------------*/
+
 .bienvenido{
     display: flex;
     flex-direction: column; /*Coloca todo el contenido en una sola xolumna y en el centro*/
@@ -741,6 +752,7 @@ SECCION RESPONSIVE */
     header {
       flex-direction: column;
       align-items: flex-end;
+      
     }
   
     nav {
@@ -768,9 +780,7 @@ SECCION RESPONSIVE */
     }
   }
 
-  /* Estilos base */
-
-/* ... (tus estilos base) ... */
+ 
 
 /* Estilos para pantallas pequeñas (hasta 390px) */
 @media screen and (max-width: 390px) {
@@ -779,8 +789,8 @@ SECCION RESPONSIVE */
       }
     
       .contenedor-video video {
-        width: 100%; /* Ajusta el tamaño del video al 100% del ancho del contenedor */
-        height: auto; /* Mantiene la proporción original del video */
+        width: 300; /* Ajusta el tamaño del video al 100% del ancho del contenedor */
+        height: 300; /* Mantiene la proporción original del video */
       }
     /* Contenedor principal */
     .contenedor-header {

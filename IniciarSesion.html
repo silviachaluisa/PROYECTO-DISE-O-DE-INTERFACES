@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="CSS/Estilos.css">
     <script src="JS/Script.js"></script>
     <title>IniciarSesion</title>
-    <!--Agregar un icono-->
+   
 </head>
 <body class="Inicio">
     <div class="container text-center"> 
         <div class="row">
             <div class="col">
-                <p>INICIAR SESIÓN.</p>
+                <h1><em>Bienvenid@ </em></h1>
                 <img class="logo-forms" src="./Imagenes/Logo.jpg" alt="Logo">
         
             </div>
@@ -23,19 +23,31 @@
             
             <div class="col"> 
                 <form action="#" class="formulario-ingreso" method="post">
-                    <h2>Inicio de sesion (usuarios)</h2>
-                    <label for="usuario">Usuario: </label><br>
+                    <h2>Inicio de sesión</h2> <br>
+                    <select id="miMenuDesplegable">
+        
+                        <option value="opcion1">Seleccione el tipo de usuario..</option>
+                        <option value="opcion2">Cliente</option>
+                        <option value="opcion3">Administrador</option>
+                        <option value="opcion4">Asesor de servicio</option>
+                        <option value="opcion5">Técnico</option>
+                      </select><br>
+                    
+                    <label for="usuario">Email: </label><br>
                     <input type="text" id="usuario" name="usuario" placeholder="Ingresa tu nombre de usuario" required><br>
                     
                     <label for="contrasena">Contraseña: </label><br>
                     <input type="password" id="contrasena" name="contrasena" placeholder="Ingresa tu contrasena" required><br>
                     
-                    <div id="caja-elementos">
+                    <div id="caja1"> <br>
                         <a href="./Registrarse.html">¿Aun no tienes cuenta?</a><br>
-                        <a href="./Home.html">¿Olvidaste la contraseña?</a>
+                        
+                    </div>
+                    <div id="caja2"> <br>
+                        <a href="RecuperarContraseña.html" id="olvidasteContrasena">¿Olvidaste la contraseña?</a>
                     </div>
             
-                    <div class="botones">
+                    <div class="botones"> 
                         <button type="submit" onclick="ingresar()">Ingresar</button>
                         <button class="cancelar" onclick="Regresar()">Cancelar</button>      
                     </div>                   
