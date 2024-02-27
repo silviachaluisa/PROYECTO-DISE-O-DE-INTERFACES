@@ -691,6 +691,33 @@ html{
     width: 13rem; /*Tamaño de las imagenes de metodos*/
 
 }
+footer{
+    background-color: #000000; /*Color del fondo del footer*/
+    padding: 20px  20px ; /*Relleno de la parte de footer*/
+    position: relative;
+    text-align: center; /*Centra las letras y el icono*/
+   
+}
+footer h2{
+    margin-top: 10px;
+    font-family:monospace;
+    color: white;
+    
+    
+}
+footer .arriba{
+    width: 50px; /*Ancho del circulo*/
+    height: 50px;/*Largo del circulo*/
+    background-color: #f40b0b; /*Color del circulo*/
+    color: #fff; /*Color de icono subir*/
+    position: absolute; /*Mantiene el icono en la posicion*/
+    left: 50%; /*Circulo e icono en la mitad*/
+    transform: translateX(-50%);
+    top: -25px;  /*Coloca todo el circulo en la mitad de la linea */
+    border-radius: 50%;
+    line-height: 50px; /*Centar el icono arriba en la mitad del circulo*/
+    font-size: 30px; /*Define el tamaño de el icono subir en blanco*/
+}
 
 /* PANTALLA BIENVENIDO -----------------------------------------------------------------------------------*/
 .bienvenido{

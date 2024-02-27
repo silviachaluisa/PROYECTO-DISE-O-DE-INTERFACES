@@ -1,11 +1,26 @@
-//Boton Cancelar
+//BOTON CA
 function Regresar(){
     window.location.href="Home.html";
 }
-function redirigirPagina(){
-    window.location.href="Bienvenido.html";
+// BOTON INGRESAR
+function ingresar() {
+    // Obtener los valores de los campos
+    var usuario = document.getElementById("usuario").value;
+    var contrasena = document.getElementById("contrasena").value;
 
+    // Validar si los campos están vacíos
+    if (usuario === "" || contrasena === "") {
+        alert("Todos los campos son obligatorios");
+    } else {
+
+    
+        window.location.href = "Bienvenido.html";
+    }
 }
+
+   
+
+
 // Boton Registrarse
 function Volver(){
     window.location.href="IniciarSesion.html";
