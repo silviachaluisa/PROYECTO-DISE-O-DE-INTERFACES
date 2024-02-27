@@ -355,26 +355,38 @@ html{
 .servicios{
     background: linear-gradient(to top, rgba(59, 61, 62, 0.8),rgb(41, 51, 56, 0.8)),
     url(../Imagenes/ImgServ/Fondo.jpg);
-    height: 120vh;
-
-    display: flex;
-    align-items: center;
+    padding: 50px 20px;
+    height: 110vh;
+}
+/*Centra las imagenes con una distancia prudente*/
+.servicios .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.servicios h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 70px;
     color: white;
-    padding: 50px 70px; /*Separa los texto de los margenes de las pantallas*/
+}
+.servicios .galeria{
+    display: flex;
+
 }
 
-.servicios .galeria{
-    display: flex; /*Modo horizontal*/
-    justify-content: center;
-}
-.servicios .galeria .proyecto{ 
-    margin: 10px;
+.servicios .galeria .proyecto{
+    position: relative;
+    margin: 10px; /*Distancia entre las imagenes*/
     cursor: pointer;
 }
+/*Define el tamaño de las iamgenes*/
 .servicios .galeria .proyecto img{
-   width: 20rem;
-   display: block;
+    width: 100%;
+    display: block; 
 }
+
 /*-------------------------------------------------------------------------------------------------------------*/
 /* SECCION CONTACTOS -------------------------------------------------------------------------------------------*/
 .contacto{
@@ -565,84 +577,7 @@ html{
     /* padding: 50px 20px; Separa los texto de los margenes de las pantallas */
 }
 
-/* SECCION RESPONSIVE */
-@media screen and (max-width:980px){
-    nav{
-        display: none;
-    }
-    .nav-responsive{
-        display: block;
-    }
-    nav.responsive{
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 75px;
-        background-color: #252A2E;
-        width: 180px;
-    }
-    nav.responsive ul{
-        display: block !important;
-    }
-    nav.responsive ul li{
-        border-bottom: 1px solid #fff;
-        padding: 10px 0;
-    }
-}
-@media screen and (max-width:700px){
-    .inicio .redes,
-    .inicio .siguenos,
-    .inicio .contenedor-video{
-        display: block;
-    }
-    .sobremi .fila .col{
-        width: fit-content;
-    }
 
-    .skills .fila{
-        display: block;
-    }
-    .skills .fila .col{
-        width: 100%;
-    }
-    .skills .fila .col .barra-skill{
-        width: 100%;
-    }
-
-    .curriculum .fila{
-        display: block;
-    }
-    .curriculum .fila .col{
-        width: 90%;
-    }
-    .curriculum .fila .derecha{
-        margin-left: 20px;
-    }
-
-    .portfolio .galeria{
-        display: block;
-        width: 100%;
-    }
-    .portfolio .galeria .proyecto{
-        max-width: 100%;
-    }
-    .portfolio .galeria .proyecto img{
-        width: 100%;
-    }
-    .contacto .fila{
-        display: block;
-    }
-    .contacto .fila .col{
-        width: 100%;
-    }
-}
-
-@media screen  and (max-width:991px){
-    .formulario-ingreso{
-        max-width: 100%;
-        margin: auto;
-    }
-}
 
 /*----------------------------------------------------------------------------------------------------------------------------------*/
 /* SECCION METODOS DE PAGO ---------------------------------------------------------------------------------------------------------*/
@@ -798,4 +733,99 @@ SECCION RESPONSIVE */
         border-bottom: 1px solid #fff;
         padding: 10px 0;
     }
+    
+    
 }
+
+@media screen and (max-width: 768px)  {
+    header {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  
+    nav {
+      margin-top: 15px;
+    }
+  
+    .Botones {
+      margin-top: 15px;
+    }
+  }
+
+  
+@media screen and (max-width: 390px)  {
+    header {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  
+    nav {
+      margin-top: 15px;
+    }
+  
+    .Botones {
+      margin-top: 15px;
+    }
+  }
+
+  /* Estilos base */
+
+/* ... (tus estilos base) ... */
+
+/* Estilos para pantallas pequeñas (hasta 390px) */
+@media screen and (max-width: 390px) {
+    .contenedor-video {
+        max-width: 100%; /* Ajusta el tamaño del contenedor al 100% del ancho de la pantalla */
+      }
+    
+      .contenedor-video video {
+        width: 100%; /* Ajusta el tamaño del video al 100% del ancho del contenedor */
+        height: auto; /* Mantiene la proporción original del video */
+      }
+    /* Contenedor principal */
+    .contenedor-header {
+      padding: 10px; /* Ajusta el padding según tus preferencias */
+    }
+  
+    /* Estilos del encabezado */
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-responsive {
+      order: -1; /* Cambia el orden para que el icono del menú esté arriba a la derecha */
+      margin-top: 10px; /* Ajusta el margen según tus preferencias */
+    }
+  
+    /* Estilos de la barra de navegación principal */
+    nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 10px; /* Ajusta el margen según tus preferencias */
+    }
+  
+    nav a {
+      margin: 5px 0; /* Ajusta el margen según tus preferencias */
+    }
+  
+    .Botones {
+      flex-direction: column;
+      margin-top: 10px; /* Ajusta el margen según tus preferencias */
+    }
+  
+    /* Estilos para la sección de inicio y otros elementos según sea necesario */
+    .inicio,
+    .acerca,
+    .servicios,
+    .contacto,
+    .metodos {
+      padding: 10px; /* Ajusta el padding según tus preferencias */
+    }
+ 
+  }
+  
+
+
+
+ 
