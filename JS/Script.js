@@ -58,3 +58,5 @@ function volver1(){
 function enviarCodigo() {
     alert("¡Tu código ha sido enviado con éxito!");
 }
+
+
