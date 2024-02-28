@@ -122,13 +122,14 @@ html{
 }
 .contenido-inicio h1{
     font-size: 20px;
+    color: white;
 }
 
 .contenedor-video {
     margin-top: 40px; /* Espaciado opcional entre el texto y el video */
     
 }
-.siguenos{
+.siguenos p{
     color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
@@ -343,6 +344,7 @@ html{
 
 .contenido-seccion p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
 }
 .contenido-seccion h3{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -804,38 +806,106 @@ SECCION RESPONSIVE */
     }
   
     .nav-responsive {
-      order: -1; /* Cambia el orden para que el icono del menú esté arriba a la derecha */
-      margin-top: 10px; /* Ajusta el margen según tus preferencias */
+      order: -1; 
+      margin-top: 10px; 
     }
   
     /* Estilos de la barra de navegación principal */
     nav ul {
       flex-direction: column;
       align-items: flex-start;
-      margin-top: 10px; /* Ajusta el margen según tus preferencias */
+      margin-top: 10px;
     }
   
     nav a {
-      margin: 5px 0; /* Ajusta el margen según tus preferencias */
+      margin: 5px 0; 
     }
   
     .Botones {
       flex-direction: column;
-      margin-top: 10px; /* Ajusta el margen según tus preferencias */
+      margin-top: 10px; 
     }
   
-    /* Estilos para la sección de inicio y otros elementos según sea necesario */
+  
     .inicio,
     .acerca,
     .servicios,
     .contacto,
     .metodos {
-      padding: 10px; /* Ajusta el padding según tus preferencias */
+      padding: 10px; 
     }
  
   }
-  
+
+
+ /* PAGINA RECUPERAR CONTRASEÑA----------------------------------------- */
+ body .Contraseña {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    height: 100vh;
+}
+
+.logoContraseña {
+    margin-bottom: 20px; /* Ajusta el margen según sea necesario */
+}
+
+.Contenido-Contraseña {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 30rem;
+}
+
+.logoContraseña img {
+    width: 70%;
+    margin-bottom: 40rem;
+}
+
+h1 {
+    color: #333333;
+}
+
+p {
+    color: #666666;
+}
 
 
 
- 
+input {
+    background-color: rgb(169, 162, 162);
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.EnviarCodigo button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.Volver button {
+    background-color: #12c421;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.EnviarCodigo button:hover {
+    background-color: #081eab;
+}
+.Volver button:hover {
+    background-color: #076e24;
+}
+
+

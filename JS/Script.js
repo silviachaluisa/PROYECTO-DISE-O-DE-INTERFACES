@@ -1,4 +1,4 @@
-//BOTON CA
+//BOTON CANCELAR
 function Regresar(){
     window.location.href="Home.html";
 }
@@ -49,4 +49,12 @@ function seleccionar(){
     menuVisible = false;
 }
 
-//Olvidaste la contraseña
+//BOTON VOLVER DE LA PAGINA RECUPERAR CONTRASEÑA
+function volver1(){
+    window.location.href="IniciarSesion.html";
+}
+
+//BOTON ENVIAR CODIGO DE LA PAGINA RECUPERAR CONTRASEÑA
+function enviarCodigo() {
+    alert("¡Tu código ha sido enviado con éxito!");
+}
