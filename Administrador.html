@@ -9,37 +9,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Administrador-Full Prestige</title>
 </head>
-<body>
-    <main>
+<body class="Contraseña">
+    <div class="logoContraseña">
         <img src="Imagenes/Logo.jpg" alt="">
-        <header>
-            <h1>Panel de Administrador</h1>
-        </header>
-    
+        <h1>Panel de Administración</h1>
+    </div>
+    <div class="Contenido-Contraseña">
         
-            <section>
-                <div class="ContenedorBotones">
-                    <select id="Menu">
-                        <h2>¿Que acción deseas realizar?</h2>
-                       <option value="opcion1">"Elija una opcion..."</option>
-                       <option value="opcion2">Ver lista Clientes</option>
-                       <option value="opcion3">Mantenimientos Realizados</option>
-                       <option value="opcion4">Inventario</option>
-                       <option value="opcion5">Reporte de Ventas</option>
-                       
-                    </select>
-                    <button>BUSCAR</button>
-                </div>
-            </section>
         
-<!--     
-        <footer>
-            <p>© 2024 Full Prestige</p>
-        </footer> -->
+        
+        <div class="campo">
+            <h1>¿Que accion deseas realizar?</h1>
+            <select id="Menu">
+            
+               <option value="opcion1">"Elija una opcion..."</option>
+               <option value="opcion2">Ver lista Clientes</option>
+               <option value="opcion3">Mantenimientos Realizados</option>
+               <option value="opcion4">Inventario</option>
+               <option value="opcion5">Reporte de Ventas</option>
+               
+            </select>
     
-    </main>
-
+        </div>
+        <div class="Botones">
+            <button class="buscar" onclick="buscar()">Buscar</button>
+            <button class="Volver" onclick="volver1()">Eliminar</button> 
+            
+        </div>
+        <button class="Volver" onclick="volver1()">Cerrar Sesión</button> 
+    
+      
+    </div>
+    
    
+    
+    
 </body>
-
 </html>
