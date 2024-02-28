@@ -3,51 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asesor de Servicio</title>
-    <link rel="stylesheet" href="estilos.css"> <!-- Enlaza tu hoja de estilo aquí -->
+    <link rel="stylesheet" href="CSS/Estilos.css">
+    <link rel="shortcut icon" href="Imagenes/Icono.jpeg" type="image/x-icon">
+    <script src="JS/Script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Asesor de Servicio-Full Prestige</title>
 </head>
 <body>
+   
+    <section id="encabezado" class="encabezado">    
+        <div class="logo">
+            <img src="Imagenes/Logo.jpg" alt=""><br>
+            <h1>Panel del Asesor de servicio</h1><br>
 
-    <header>
-        <h1>Panel de Asesor de Servicio</h1>
-    </header>
+        </div> 
 
-    <nav>
-        <ul>
-            <li><a href="#recepcion">Recepción de Vehículos</a></li>
-            <li><a href="#tareas">Asignar Tareas</a></li>
-            <li><a href="#citas">Citas Programadas</a></li>
-            <li><a href="#historial">Historial de Clientes</a></li>
-            <li><a href="#cerrar-sesion">Cerrar Sesión</a></li>
-        </ul>
-    </nav>
+    </section>
+   
+        <div class="Contenido">
+        
+            <div class="contenido">
+                <h2>¿Que acción deseas realizar?</h2> <br>
+                <select id="Menu">
+                
+                   <option value="opcion1">"Elija una opción..."</option>
+                   <option value="opcion2">Recepcion de vehiculos</option>
+                   <option value="opcion3">Asignar Tareas</option>
+                   <option value="opcion4">Historial de Clientes</option>
+            
+                   
+                </select>
+        
+            </div>
+            <div class="Botones">
+                <button class="buscar" onclick="buscar()">Buscar</button>
+                <button class="eliminar" onclick="eliminar()">Eliminar</button> 
+                
+            </div>
+            <button class="Volver" onclick="volver1()">Cerrar Sesión</button> 
+        
+          
+        
 
-    <main>
-        <!-- Contenido principal aquí -->
-        <section id="recepcion">
-            <h2>Recepción de Vehículos</h2>
-            <!-- Contenido específico de la recepción de vehículos -->
-        </section>
-
-        <section id="tareas">
-            <h2>Asignar Tareas</h2>
-            <!-- Contenido específico de la asignación de tareas por el asesor de servicio -->
-        </section>
-
-        <section id="citas">
-            <h2>Citas Programadas</h2>
-            <!-- Contenido específico de las citas programadas para el taller -->
-        </section>
-
-        <section id="historial">
-            <h2>Historial de Clientes</h2>
-            <!-- Contenido específico del historial de servicios gestionados por el asesor -->
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2024 Taller Automotriz</p>
-    </footer>
-
+    </section>
+    
+    
+    
+    
+   
+    
+    
 </body>
+
 </html>

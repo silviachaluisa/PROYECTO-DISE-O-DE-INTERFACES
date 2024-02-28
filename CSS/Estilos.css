@@ -281,7 +281,7 @@ html{
 
 /*---------------------------------------------------------------------------------------------------------------------------------*/
 /* SECCION ACERCA DE NOSOTROS----------------------------------------------------------------------------------------------------------------*/
-.administrador,
+
 .Contraseña,
 .bienvenido,
 .acerca{
@@ -848,7 +848,9 @@ SECCION RESPONSIVE */
 
 .logoContraseña {
     margin-bottom: 20px; /* Ajusta el margen según sea necesario */
+    
 }
+
 
 .Contenido-Contraseña {
     text-align: center;
@@ -862,10 +864,15 @@ SECCION RESPONSIVE */
 .logoContraseña img {
     width: 70%;
     margin-bottom: 40rem;
+   
 }
 
+
 h1 {
-    color: #333333;
+    color: #201c1c;
+}
+h2 {
+    color: #040404;
 }
 
 p {
@@ -908,5 +915,74 @@ input {
 .Volver button:hover {
     background-color: #076e24;
 }
+.logoContraseña h1{
+    color: white;
+}
+/* 
+PANTALLA ADMINISTRADOR */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#encabezado {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.Contenido {
+    max-width: 600px;
+    margin: 50px auto; /* Centra el contenido horizontalmente y proporciona un espacio superior e inferior */
+    padding: 20px;
+    border: 5px solid #000000; /* Agrega un borde alrededor del contenido */
+  
+    
+}
+
+.contenido {
+    text-align: center;
+}
+
+.Botones {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+button {
+    
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.buscar{
+    background-color: #0056b3;
+}
+
+.buscar:hover {
+    background-color: #052d58;
+}
+.eliminar{
+    background-color: #dd0d0d;
+}
+.eliminar:hover {
+    background-color: #dc1010;
+}
+.Volver:hover {
+    background-color: #158209;
+}
+
+#Menu {
+    padding: 10px;
+    font-size: 15px;
+}
+
 
 

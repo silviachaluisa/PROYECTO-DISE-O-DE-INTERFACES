@@ -3,41 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panel de Técnico - Taller Automotriz</title>
-    <link rel="stylesheet" href="estilos.css"> <!-- Enlaza tu hoja de estilo aquí -->
+    <link rel="stylesheet" href="CSS/Estilos.css">
+    <link rel="shortcut icon" href="Imagenes/Icono.jpeg" type="image/x-icon">
+    <script src="JS/Script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Panel de Técnico-Full Prestige</title>
 </head>
 <body>
+   
+    <section id="encabezado" class="encabezado">    
+        <div class="logo">
+            <img src="Imagenes/Logo.jpg" alt=""><br>
+            <h1>Panel del Técnico</h1><br>
 
-    <header>
-        <h1>Panel de Técnico</h1>
-    </header>
+        </div> 
 
-    <nav>
-        <ul>
-            <li><a href="#tareas">Mis Tareas</a></li>
-            <li><a href="#calendario">Productos en stock</a></li>
-         
-        </ul>
-    </nav>
+    </section>
+   
+        <div class="Contenido">
+        
+            <div class="contenido">
+                <h2>¿Que acción deseas realizar?</h2> <br>
+                <select id="Menu">
+                
+                   <option value="opcion1">"Elija una opción..."</option>
+                   <option value="opcion2">Ver mis tareas</option>
+                   <option value="opcion3">Productos en stock</option>
+                   
+                </select>
+        
+            </div>
+            <div class="Botones">
+                <button class="buscar" onclick="buscar()">Buscar</button>
+                <button class="eliminar" onclick="eliminar()">Finalizar Tarea</button> 
+                
+            </div>
+            <button class="Volver" onclick="volver1()">Cerrar Sesión</button> 
+        
+          
+        
 
-    <main>
-        <!-- Contenido principal aquí -->
-        <section id="tareas">
-            <h2>Mis Tareas</h2>
-            <!-- Contenido específico de las tareas del técnico -->
-        </section>
-
-        <section id="calendario">
-            <h2>Productos en Stock</h2>
-            <!-- Contenido específico del calendario -->
-        </section>
-
-       
-    </main>
-
-    <footer>
-        <p>© 2024 Taller Automotriz</p>
-    </footer>
-
+    </section>
+    
+    
+    
+    
+   
+    
+    
 </body>
+
 </html>

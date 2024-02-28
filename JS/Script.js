@@ -5,18 +5,9 @@ function Regresar(){
 
 // BOTON INGRESAR
 function ingresar() {
-    // Obtener los valores de los campos
-    var usuario = document.getElementById("usuario").value;
-    var contrasena = document.getElementById("contrasena").value;
-
-    // Validar si los campos están vacíos
-    if (usuario === "" || contrasena === "") {
-        alert("Todos los campos son obligatorios");
-    } else {
-
-        window.location.href = "./Bienvenido.html";
-    }
-    // window.location.href = "Bienvenido.html";
+    window.location.href = "./Bienvenido.html";
+   
+    
 }
 
    
